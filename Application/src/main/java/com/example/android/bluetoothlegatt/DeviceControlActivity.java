@@ -227,11 +227,62 @@ public class DeviceControlActivity extends AppCompatActivity {
         UpButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                if ()
-            } {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    // start your timer
+                    onClickWrite("a");
+
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    // stop your timer.
+                    onClickWrite("e");
+
+                }
                 return false;
-            }
-        });
+            }});
+
+        DownButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    // start your timer
+                    onClickWrite("b");
+
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    // stop your timer.
+                    onClickWrite("e");
+
+                }
+                return false;
+        }});
+
+        LeftButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    // start your timer
+                    onClickWrite("c");
+
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    // stop your timer.
+                    onClickWrite("e");
+
+                }
+                return false;
+            }});
+
+        RightButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    // start your timer
+                    onClickWrite("d");
+
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    // stop your timer.
+                    onClickWrite("e");
+
+                }
+                return false;
+            }});
 
 
 

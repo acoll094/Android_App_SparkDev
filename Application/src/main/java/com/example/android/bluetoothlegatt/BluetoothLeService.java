@@ -60,9 +60,9 @@ public class BluetoothLeService extends Service {
     private final String BLEReadCharacteristic = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E";
     */
 
-    private final String BLEService = "0000dfb0-0000-1000-8000-00805f9b34fb";
-    private final String BLEWriteCharacteristic = "0000dfb1-0000-1000-8000-00805f9b34fb";
-    private final String BLEReadCharacteristic = "0000dfb1-0000-1000-8000-00805f9b34fb";
+    private final String BLEService = "0000ffe0-0000-1000-8000-00805f9b34fb";
+    private final String BLEWriteCharacteristic = "0000ffe1-0000-1000-8000-00805f9b34fb";
+    private final String BLEReadCharacteristic = "0000ffe1-0000-1000-8000-00805f9b34fb";
 
     public final static String ACTION_GATT_CONNECTED =
             "com.example.bluetooth.le.ACTION_GATT_CONNECTED";
