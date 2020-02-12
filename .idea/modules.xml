@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android_App_SparkDev.iml" filepath="$PROJECT_DIR$/Android_App_SparkDev.iml" group="Android_App_SparkDev" />
-      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" group="Android_App_SparkDev/Application" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Android_App_SparkDev.iml" filepath="$PROJECT_DIR$/.idea/Android_App_SparkDev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
     </modules>
   </component>
 </project>
