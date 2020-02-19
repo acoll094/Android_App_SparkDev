@@ -55,6 +55,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.support.v7.widget.Toolbar;
+import android.widget.VideoView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -95,6 +96,8 @@ public class DeviceControlActivity extends AppCompatActivity {
     Button DownButton;
     Button LeftButton;
     Button RightButton;
+    VideoView liveVideoView;
+
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -198,6 +201,9 @@ public class DeviceControlActivity extends AppCompatActivity {
         DownButton = findViewById(R.id.DownButton);
         LeftButton = findViewById(R.id.LeftButton);
         RightButton = findViewById(R.id.RightButton);
+
+        liveVideoView = findViewById(R.id.liveVideoView); // initiate a video view
+        liveVideoView.start(); //Start video
 
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
